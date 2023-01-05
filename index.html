@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #valuess{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="logo.png">
+    </div>
+    <h1 id="valuess">10</h1>
+
+    <script>
+        function change() {
+            var val = document.getElementById("valuess").innerText;
+            document.getElementById("valuess").innerText -= 1;
+            console.log(val);
+            if (val == 5) {
+                clearInterval(set);
+                console.log("hi");
+                window.open("https://www.google.com/");
+            }
+
+            
+        }
+        var set = setInterval(change, 1000);
+    </script>
+</body>
+
+</html>
