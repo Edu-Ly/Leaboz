@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>نقابة المهن الهندسية فرع الزاوية</title>
     <style>
         body {
             display: flex;
@@ -16,29 +17,55 @@
         #valuess{
             display: none;
         }
+        .butt{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding: 30px;
+        }
+        .butt a{
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            font-family: lbc;
+            font-size: 2rem;
+            font-weight: 800;
+            padding: 20px 3rem;
+            background-color: #68A3C3;
+            border-radius: 20px 310px;
+            box-shadow: 1px 1px 22px #3d7b9c;
+        }
     </style>
 </head>
 
-<body>
-    <div>
-        <img src="logo.png">
+<body onload="loaded()">
+    
+        <img width="35%" src="logo.png">
+    
+    <div class="butt">
+        <a href="https://www.google.com/">لزيارة موقع النقابة</a>
     </div>
     <h1 id="valuess">10</h1>
 
     <script>
-        function change() {
-            var val = document.getElementById("valuess").innerText;
-            document.getElementById("valuess").innerText -= 1;
-            console.log(val);
-            if (val == 5) {
-                clearInterval(set);
-                console.log("hi");
-                window.open("https://www.google.com/");
-            }
+        function loaded() {
+            window.open("https://www.google.com/" , "_self");
+        }
+        // function change() {
+        //     var val = document.getElementById("valuess").innerText;
+        //     document.getElementById("valuess").innerText -= 1;
+        //     console.log(val);
+        //     if (val == 5) {
+        //         clearInterval(set);
+        //         console.log("hi");
+        //         window.open("https://www.google.com/" , "_self");
+        //     }
 
             
-        }
-        var set = setInterval(change, 1000);
+        // }
+        // var set = setInterval(change, 1000);
     </script>
 </body>
 
